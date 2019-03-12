@@ -25,13 +25,34 @@
 
 \begin{abstract}
 
-\lipsum[1]
+Write the abstract after to finalize the article. The main orientations to writing a good abstract are:
+
+The Abstract is a summary of the study, with the primary emphasis on results and conclusions. Very briefly present the question(s) asked, the experimental design, a summary of observations, and list conclusions. Be very succinct - the abstract should be a single paragraph. It should stand on its own; therefore, do not refer to any other part of the report, such as a figure or table. Avoid long sections of introductory or explanatory material. As a summary of work done, it is written in past tense.
 
 \end{abstract}
 
 \section{Introduction}
 
-\lipsum[2]
+After to write the Results section, start to write the Introduction. The main orientations to writing a good introduction are:
+
+\begin{itemize}
+	\item Presentation of the problem or research question
+	\item Contextualize
+	\begin{itemize}
+		\item briefly review of the literature to help the reader
+		\item to mention the used research methodology 
+		\item scope of the study - contextualize the reader about the methods used
+	\end{itemize}
+	\item The purpose of the study
+	\begin{itemize}
+		\item explain the scope of the study
+		\item explain why some aspects was chosen and other not.
+		\item explain why the chosen theory was applied to the data.
+		\item avoid a detailed bibliography review
+		\item avoid a summary of results 
+	\end{itemize}
+	\item Establish the objective os the work
+\end{itemize}
 
 \begin{figure}[h!]
 	\centering
@@ -47,9 +68,6 @@
 	\label{fig:label3}
 \end{figure}
 
-\lipsum[6]
-
-\section{Materials and Methods}
 
 \subsection{making a citation}
 
@@ -62,25 +80,30 @@ Example of indirect citation \citep{Yilmaz2000}.
 The book of professor \cite{Claerbout1984} is a good choice for who want to learn more about seismic processing and imaging. This was an example of the direct citation.
 
 
-\subsection{Optional subsection}
-\lipsum[7]
 
-The 2D acoustic wave equation:
+\section{Materials and Methods}
+
+This section must be written at first. The main orientations to write a good Materials and Methods are:
+
+\begin{itemize}
+	\item Briefly describe the methods used
+	\item Cite references to the reader to find more information
+	\item Describe the new methods providing sufficient details to others researches can reproduce your experiment
+	\item Use subtitles to separate different methodologies
+	\item Describe what you did in the past
+\end{itemize}
+
+\subsection{Optional subsection}
+
+Bellow is an example of how to write an equation using the Latex's math ambient:
+
 \begin{equation}\label{waveequation}
 \frac{ 1}{  c^2(\mathbf{x})}\frac{\partial^2}{\partial t^2}p(\mathbf{x},t) - \nabla^2 p(\mathbf{x},t)  = w(\mathbf{x}_s,t),				
 \end{equation}
 
 \noindent
-\lipsum[8]
+or it possible to use the math symbols inside the text like the following example. The previous wave equation is the 2D wave equation, where $ c(\mathbf{x}) $ is the P wave velocity of the medium. 
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{images/logo_congress}
-	\label{fig:label4}	
-	\caption{Example using a simple figure}
-\end{figure}
-
-\lipsum[8]
 Example of an equation using 2 lines:
 
 \begin{eqnarray}\label{unconstrainedLagrangian}
@@ -90,15 +113,29 @@ Example of an equation using 2 lines:
 \end{array}   
 \end{eqnarray}
 
-\noindent
-dummy text.
 
-\lipsum[9]
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{images/logo_congress}
+	\label{fig:label4}	
+	\caption{Example using a simple figure}
+\end{figure}
+
+
 \section{Results}
 
-\subsection{Optional subsection}
+The second section that should be written is the result section. The main orientations to write a good results section:
 
-\lipsum[10]
+\begin{itemize}
+	\item The results must be presented in a logical sequence
+	\item Don't duplicate data among figures, tables, and text
+	\item Describe all parameters used in the experiments
+	\item Provide sufficient information to the other researchers can reproduce the experiment
+	\item Use subtitles to separate the different experiments
+	
+\end{itemize}
+
 
 \begin{figure}[h!]
 	\centering
@@ -122,12 +159,8 @@ dummy text.
 	\label{fig:label9}
 \end{figure}
 
-\lipsum[15]
 
-
-
-
-
+An example of table
 
 \begin{table}[htb]
 	\caption{Descrição tabela.}
@@ -154,8 +187,17 @@ dummy text.
 
 \section*{Discussion and Conclusion}
 
-\lipsum[1-3]
+After to write the introduction, start to write the discussion and conclusion section. You could separate it in two or not. The main orientation are:
 
+\begin{itemize}
+	\item Briefly describe the limitation of the study showing the you considered the weakness of your experiments
+	\item Discuss the conclusion from most important to less important
+	\item Highlight the most important findings in a few words
+	\item Relate the results with the hypothesis
+	\item  Identify methodological proceedings with relevant results
+	\item If your finding are preliminaries, suggest new experiments
+	
+\end{itemize}
 
 \bibliography{references}
 
